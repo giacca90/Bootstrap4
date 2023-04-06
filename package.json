@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/giacca90/Bootstrap4/issues"
   },
-  "homepage": "https://github.com/giacca90/Bootstrap4#readme"
+  "homepage": "https://github.com/giacca90/Bootstrap4#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "popper.js": "^1.16.1"
+  }
 }
