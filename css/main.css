@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: lightblue;
+    color: black;
+}
+
+.footer {
+    background-color: lightblue;
+    margin: 0px auto;
+    padding: 20px 0px; }
+
+.title {
+    background-color: aquamarine;
+}
+
+.tarjeta {
+    padding: 10px 10px 10px 10px;
+    border: black 1px solid;
+    margin: 3px 3px 3px 3px;
+}
+
+.btn {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footC {
+    text-align: center;
+}
+
+.footR {
+    text-align: right;
+}
