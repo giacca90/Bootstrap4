@@ -33,3 +33,9 @@
 .footR {
     text-align: right;
 }
+
+.card {
+    padding: 10px 10px 10px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
