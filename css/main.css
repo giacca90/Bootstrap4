@@ -38,3 +38,11 @@
     margin-left: 2px;
     margin-right: 2px;
 }
+
+.accordion-button {
+    background-color: aquamarine;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: aquamarine;
+}
