@@ -50,3 +50,12 @@
 .form-group {
     padding: 10px 10px 10px 10px ;
 }
+
+.carousel {
+    background-color: aquamarine;
+    
+}
+
+.carousel-caption {
+    color: black;
+}

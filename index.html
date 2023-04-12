@@ -42,8 +42,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        
-                        
                         <div class="row">
                             <nav>
                                 <div class="nav nav-pills" id="nav-log" role="tablist">
@@ -105,11 +103,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>                  
-                        
-                        
-                        
-                    
+                        </div>              
                     </div>
                     
                 </div>
@@ -121,7 +115,7 @@
             <div class="container">
                 <div class="row row-header">
                     <div class="col-2">
-                        <img src="img/Spam Justicia Social.png" class="img-fluid imgicon" alt="Responsive image">
+                        <img src="img/Spam Justicia Social.png" class="img-fluid" alt="Responsive image">
                     </div>
                     <div class="col-8">
                         <h1>PLANTILLAS SOBERANAS</h1><br>
@@ -129,7 +123,7 @@
                     </div>
                     <div class="col-2">
                          <!-- Button trigger modal -->
-                        <button type="submit" class="btn btn-lg" data-bs-toggle="modal tooltip" data-bs-target="#loginModal" data-html="true" title="Toca aqui para registrarte" data-placement="bottom"><span class="fa fa-sign-in fa-lg"></span>Login o Registrate</button>        <!-- Modal -->
+                        <button type="submit" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#loginModal" data-html="true" title="Toca aqui para registrarte" data-placement="bottom"><span class="fa fa-sign-in fa-lg"></span>Login o Registrate</button>        <!-- Modal -->
         
                     </div>
                 </div>
@@ -169,52 +163,69 @@
                 <h2 class="align-items-center">Nuestras Plantillas:</h2>
             </div>
             <br>
-            <div class="d-flex flex-column flex-sm-row">
-                
-                <div class="card col col-md-4 justify-content-between">
 
-                    <div class="card-header">
-                        <h3>Registro de Copyright del nombre legal:</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Con esta plantilla podras registrar tu nombre legal como marca registrada en derecho consuetudinario.</p>
-                        <img src="img/copyright.png" class="img-fluid">
-                    </div>
-                    <div class="card-footer">
-                        <a href=""><button class="btn btn-primary">Ir a la plantilla</button></a>
-                    </div>   
-                </div>
 
-                <div class="card col col-md-4 justify-content-between">
-                    <div class="card-header">
-                        <h3>Private Tort Claim</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Reclama los daños sufridos por lo privado. La forma comercial para hacer responsables a los responsables.</p>    
-                        <img src="img/justice.jpg" class="img-fluid">
-                    </div>
-                    <div class="card-footer">
-                        <a href=""><button class="btn btn-primary">Ir a la plantilla</button></a>
-                    </div>   
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                
-                <div class="card col col-md-4 justify-content-between">
-                    <div class="card-header">
-                        <h3>International Trust</h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/copyright.png" class="d-block img-fluid">
+                            </div>
+                            <div class="col-8 align-items-center">
+                                <h3>Con esta plantilla podras registrar tu nombre legal como marca registrada en derecho consuetudinario.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Copyright del nombre legal</h5>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p>Crea tu propio fideicomiso irevocable para proteger tus propiedades de embargos, expropios o impuestos.</p>
-                        <img src="img/trust.jpg" class="img-fluid">
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/justice.png" class="d-block img-fluid">
+                            </div>
+                            <div class="col-8 align-items-center">
+                                <h3>Reclama los daños sufridos por lo privado. La forma comercial para hacer responsables a los responsables.</h3>    
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tort Claim</h5>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                            <a href=""><button class="btn btn-primary">Ir a la plantilla</button></a>
-                    </div> 
-                </div>
-                   
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/trust.png" class="d-block img-fluid">
+                            </div>
+                            <div class="col-8 align-items-center">
+                                <h3>Crea tu propio fideicomiso irevocable para proteger tus propiedades de embargos, expropios o impuestos.</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>International Trust</h5>
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
             </div>
-            
+     
         </div>
         
+        <br>
         <footer class="footer">
             <div class="container">
                 <div class="row row-footer">
