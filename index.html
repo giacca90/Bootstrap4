@@ -26,9 +26,9 @@
                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="fraude.html">Descubre el fraude</a></li>
                     <li class="nav-item"><a class="nav-link" href="remedio.html">Descubre el remedio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Registra tu nombre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">International Trust</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tort Claim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="copyright.html">Registra tu nombre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trust.html">International Trust</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tortclaim.html">Tort Claim</a></li>
                 </ul>
             </div>
         </nav>
@@ -113,18 +113,17 @@
         
         <header class="jumbotron">
             <div class="container">
-                <div class="row row-header">
-                    <div class="col-2">
+                <div class="row row-header align-items-center">
+                    <div class="col-2 d-none d-md-block">
                         <img src="img/Spam Justicia Social.png" class="img-fluid" alt="Responsive image">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 col-ms-10"> 
                         <h1>PLANTILLAS SOBERANAS</h1><br>
                         <h3>El lugar donde encontrar tus plantillas.</h3>
                     </div>
                     <div class="col-2">
                          <!-- Button trigger modal -->
-                        <button type="submit" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#loginModal" data-html="true" title="Toca aqui para registrarte" data-placement="bottom"><span class="fa fa-sign-in fa-lg"></span>Login o Registrate</button>        <!-- Modal -->
-        
+                        <button type="submit" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#loginModal" data-html="true" title="Toca aqui para registrarte" data-placement="bottom"><span class="fa fa-sign-in fa-lg"></span>Login o Registrate</button>
                     </div>
                 </div>
             </div>        
@@ -174,11 +173,13 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-none d-md-block">
                                 <img src="img/copyright.png" class="d-block img-fluid">
                             </div>
                             <div class="col-8 align-items-center">
-                                <h3><br> Con esta plantilla podras registrar tu nombre legal como marca registrada en derecho consuetudinario.</h3>
+                                <a href="copyright.html" class="text-black">
+                                    <h3 data-bs-toggle="tooltip" data-html="true" title="Toca aqui para ir a la plantilla" data-placement="bottom"><br> Con esta plantilla podras registrar tu nombre legal como marca registrada en derecho consuetudinario.</h3>
+                                </a>
                             </div>
                         </div>
                         <div class="carousel-caption d-none d-md-block">
@@ -189,11 +190,13 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-none d-md-block">
                                 <img src="img/justice.png" class="d-block img-fluid">
                             </div>
                             <div class="col-8 align-items-center">
-                                <h3><br> Reclama los daños sufridos por lo privado. La forma comercial para hacer responsables a los responsables.</h3>    
+                                <a href="tortclaim.html" class="text-black">
+                                    <h3 data-bs-toggle="tooltip" data-html="true" title="Toca aqui para ir a la plantilla" data-placement="bottom"><br> Reclama los daños sufridos por lo privado. La forma comercial para hacer responsables a los responsables.</h3>    
+                                </a>
                             </div>
                         </div>
                         
@@ -205,11 +208,13 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-none d-md-block">
                                 <img src="img/trust.png" class="d-block img-fluid">
                             </div>
                             <div class="col-8 align-items-center">
-                                <h3><br> Crea tu propio fideicomiso irevocable para proteger tus propiedades de embargos, expropios o impuestos.</h3>
+                                <a href="trust.html" class="text-black">
+                                    <h3 data-bs-toggle="tooltip" data-html="true" title="Toca aqui para ir a la plantilla" data-placement="bottom"><br> Crea tu propio fideicomiso irevocable para proteger tus propiedades de embargos, expropios o impuestos.</h3>
+                                </a>
                             </div>
                         </div>
                         
@@ -228,7 +233,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
             </div>
-     
+            <p>*consulta la lista de <a href="precios.html">Precios</a> para los servicios relacionados con las plantillas.</p>
         </div>
         
         <br>
@@ -247,6 +252,7 @@
                         <p>El uso de esta información queda bajo TU responsabilidad</p>
                     </div>
                     <div class="col d-flex flex-column align-items-end">
+                        <div><a href="contact.html">Contáctanos</a></div>
                         <div><a href="https://t.me/soberaniayjusticiasocial">Telegram <span class="fa fa-telegram"></span></a></div>
                         <div><a href="https://www.justiciasocial.com.es/">Sitio Web <span class="fa fa-dribbble"></span> </a></div>
                         <div><a href="https://odysee.com/@JUSTICIASOCIAL:5?view=playlists">Odysee <span class="fa fa-play"></span></a></div>
@@ -262,6 +268,7 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>$(document).ready(function(){
            $('[data-toggle="tooltip"]').tooltip();
+           $("#carousel").carousel({interval: 4000});
             });
         </script> 
     
