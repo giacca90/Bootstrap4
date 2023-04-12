@@ -46,3 +46,7 @@
 .accordion-button:not(.collapsed) {
     background-color: aquamarine;
 }
+
+.form-group {
+    padding: 10px 10px 10px 10px ;
+}

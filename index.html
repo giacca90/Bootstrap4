@@ -33,15 +33,104 @@
             </div>
         </nav>
         
+       
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="loginModal1">Login o Registro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        
+                        <div class="row">
+                            <nav>
+                                <div class="nav nav-pills" id="nav-log" role="tablist">
+                                    <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#loginForm" type="button" role="tab" aria-controls="loginForm" aria-selected="true">Login <span class="fa fa-login"></span></button>
+                                    <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#registerForm" type="button" role="tab" aria-controls="register" aria-selected="false">Registrate</button>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="row">
+                            <div class="tab-content" id="nav-loginContent">
+                                <div class="tab-pane fade show active" id="loginForm" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                    
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                    <label for="InputEmail">Correo electronico</label>
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputPassword">Contraseña</label>
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Recuerdate de mi!!
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cierra</button>
+                                            <button type="button" class="btn btn-primary">Login</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            
+                                <div class="tab-pane fade" id="registerForm" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                    <label for="InputEmail">Correo electronico</label>
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputPassword">Contraseña</label>
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputPassword">Repite la contraseña</label>
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cierra</button>
+                                            <button type="button" class="btn btn-primary">Registrate</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>                  
+                        
+                        
+                        
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
         <header class="jumbotron">
             <div class="container">
                 <div class="row row-header">
                     <div class="col-2">
                         <img src="img/Spam Justicia Social.png" class="img-fluid imgicon" alt="Responsive image">
                     </div>
-                    <div class="col-10">
+                    <div class="col-8">
                         <h1>PLANTILLAS SOBERANAS</h1><br>
                         <h3>El lugar donde encontrar tus plantillas.</h3>
+                    </div>
+                    <div class="col-2">
+                         <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="fa fa-sign-in fa-lg"></span>Login o Registrate</button>        <!-- Modal -->
+        
                     </div>
                 </div>
             </div>        
