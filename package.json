@@ -5,7 +5,12 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin copyright.html -d dist --htmlmin -o dist/copyright.html && usemin fraude.html -d dist --htmlmin -o dist/fraude.html && usemin plantillas.html -d dist --htmlmin -o dist/plantillas.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin remedio.html -d dist --htmlmin -o dist/remedio.html && usemin tortclaim.html -d dist --htmlmin -o dist/tortclaim.html && usemin trust.html -d dist --htmlmin -o dist/trust.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -20,12 +25,22 @@
   "devDependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-social": "^5.1.1",
+    "concurrently": "^8.0.1",
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "imagemin-cli": "^7.0.0",
     "jquery": "^3.6.4",
     "node-sass": "^8.0.0",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "uglify-es": "github:mishoo/UglifyJS2#harmony",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "less": "^4.1.3"
+    "less": "^4.1.3",
+    "onchange": "^7.1.0",
+    "rimraf": "^5.0.0"
   }
 }

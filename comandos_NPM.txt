@@ -11,3 +11,34 @@ Instalar Less:
     preparas los archivs .less y para convertirlos en .css
         lessc css/styles.less css/styles.css
 
+
+Salida a producción:
+    sudo npm install --save-dev- onchange rimraf
+    en package.json añadir en la sección "scripts":
+        "watch:scss": "onchange 'css/*.scss' -- npm run scss"
+    ejecuda watch:scss
+
+    sudo npm install --save-dev concurrently
+    sudo npm install --save-dev copyfiles
+    sudo npm install --save-dev imagemin-cli --unsafe-perm=true --allow-root
+     en package.json añadir en la sección "scripts":
+        "clean": "rimraf dist",
+        "imagemin": "imagemin img/* --out-dir dist/img"
+    probar que funcione con 
+        npm run imagemin
+
+    sudo npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
+    en package.json añadir en la sección "scripts":
+        "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html"
+    repetir por cada archivo html, separads por &&
+    Añadir comentarios a los links de los estilos:
+        <!--build:css dist/index.css-->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--endbuild-->
+    Añadir comentarios a los links de los estilos:
+        <!--build:js dist/index.js-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <!--endbuild-->
+    en package.json añadir en la sección "scripts":
+        "build": "npm clean && npm run scss && npm run imagemin && npm run usemin"
+    ejecutar npm run build
