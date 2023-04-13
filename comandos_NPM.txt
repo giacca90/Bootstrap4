@@ -6,3 +6,8 @@ Instalar Sass:
         npm run scss
         
 
+Instalar Less:
+    sudo npm install --save-dev- less
+    preparas los archivs .less y para convertirlos en .css
+        lessc css/styles.less css/styles.css
+

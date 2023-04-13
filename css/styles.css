@@ -1,48 +1,49 @@
 .jumbotron {
   background-color: lightblue;
-  color: black; }
-
+  color: black;
+}
 .footer {
   background-color: lightblue;
   margin: 0px auto;
-  padding: 20px 0px; }
-
+  padding: 20px 0px;
+}
 .title {
-  background-color: #7fffd4; }
-
+  background-color: #7fffd4;
+}
 .tarjeta {
   padding: 10px, 10px, 10px, 10px;
   border: black 1px solid;
-  margin: 3px 3px 3px 3px; }
-
+  margin: 3px 3px 3px 3px;
+}
 .btn {
   width: 100%;
   bottom: 0;
   left: 0;
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 .footC {
-  text-align: center; }
-
+  text-align: center;
+}
 .footR {
-  text-align: right; }
-
+  text-align: right;
+}
 .card {
   padding: 10px, 10px, 10px, 10px;
   margin-left: 2px;
-  margin-right: 2px; }
-
+  margin-right: 2px;
+}
 .accordion-button {
-  background-color: #7fffd4; }
-
+  background-color: #7fffd4;
+}
 .accordion-button:not(.collapsed) {
-  background-color: #7fffd4; }
-
+  background-color: #7fffd4;
+}
 .form-group {
-  padding: 10px, 10px, 10px, 10px; }
-
+  padding: 10px, 10px, 10px, 10px;
+}
 .carousel {
-  background-color: #7fffd4; }
-
+  background-color: #7fffd4;
+}
 .carousel-caption {
-  color: black; }
+  color: black;
+}
