@@ -54,15 +54,16 @@
                             <div class="tab-content" id="nav-loginContent">
                                 <div class="tab-pane fade show active" id="loginForm" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                                     
-                                    <form>
+                                    <form id="loginForm">
                                         <div class="form-row">
                                             <div class="form-group">
                                                     <label for="InputEmail">Correo electronico</label>
-                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Tu correo electronico" >
                                             </div>
+
                                             <div class="form-group">
                                                 <label for="InputPassword">Contraseña</label>
-                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Tu contraseña" >
                                             </div>
                                             <div class="col-sm-auto">
                                                 <div class="form-check">
@@ -74,31 +75,31 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cierra</button>
-                                            <button type="button" class="btn btn-primary">Login</button>
+                                            <button type="button" class="btn btn-primary disabled" id="loginButton">Login</button>
                                         </div>
                                     </form>
 
                                 </div>
                             
                                 <div class="tab-pane fade" id="registerForm" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                                    <form>
+                                    <form id="registerForm">
                                         <div class="form-row">
                                             <div class="form-group">
                                                     <label for="InputEmail">Correo electronico</label>
-                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail2" placeholder="Tu correo electronico">
                                             </div>
                                             <div class="form-group">
                                                 <label for="InputPassword">Contraseña</label>
-                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword2" placeholder="Tu contraseña">
                                             </div>
                                             <div class="form-group">
                                                 <label for="InputPassword">Repite la contraseña</label>
-                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                                <input type="password" class="form-control form-control-sm mr-1" id="InputPassword3" placeholder="Repite tu contraseña">
                                             </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cierra</button>
-                                            <button type="button" class="btn btn-primary">Registrate</button>
+                                            <button type="button" id="registerButton" class="btn btn-primary disabled">Registrate</button>
                                         </div>
                                     </form>
                                 </div>
@@ -270,7 +271,55 @@
            $('[data-toggle="tooltip"]').tooltip();
            $("#carousel").carousel({interval: 4000});
             });
+           $('#loginModal').on('hide.bs.modal',function(e){
+            console.log('el modal se ma a esconder')
+           });
+           $('#loginModal').on('hidden.bs.modal',function(e){
+            console.log('el modal se ha escondido')
+           });
+           $('#loginModal').on('show.bs.modal',function(e){
+            console.log('el modal se va a mostrar')
+           });
+           $('#loginModal').on('shown.bs.modal',function(e){
+            console.log('el modal se ha mostrado');
+           });
+           
+           $("#loginForm").keyup(function() {
+
+                $correoText = $("#InputEmail").val();
+                $passwordText= $("#InputPassword").val();
+
+                if( $correoText.length<=0 || $passwordText.length<= 0){
+                    console.log('disabled');
+                    $('#loginButton').addClass('disabled')
+                
+                }
+                else{
+                    console.log('abled');
+                    $('#loginButton').removeClass('disabled');
+                } 
+            });
+
+            $("#registerForm").keyup(function() {
+
+                $correoText2 = $("#InputEmail2").val();
+                $passwordText2= $("#InputPassword2").val();
+                $passwordText3= $("#InputPassword3").val();
+
+                if( $correoText2.length<=0 || $passwordText2.length<= 0 || $passwordText3.length<=0){
+                    console.log('disabled');
+                    $('#registerButton').addClass('disabled')
+                
+                }
+                else{
+                    if($passwordText2==$passwordText3){
+                        console.log('abled');
+                    $('#registerButton').removeClass('disabled');
+                    }
+                    
+                } 
+            });
+
         </script> 
-    
     </body>
 </html>
