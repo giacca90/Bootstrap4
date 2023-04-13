@@ -40,7 +40,7 @@
 }
 
 .accordion-button {
-    background-color: aquamarine;
+    background-color: #7fffd4;
 }
 
 .accordion-button:not(.collapsed) {

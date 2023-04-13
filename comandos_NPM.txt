@@ -1,0 +1,8 @@
+Instalar Sass:
+    sudo npm install --save-dev node-sass
+    en package.json añadir en la sección "scripts":
+        "scss": "node-sass -o css/ css/"
+    preparas los archivos .scss y para convertirlos en .css:
+        npm run scss
+        
+
