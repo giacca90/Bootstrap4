@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-   <!--build:css dist/index.css-->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
-       <!--endbuild-->
+    <link rel="stylesheet" href="dist/index.css">
 
     <title>Plantillas Soberanas</title>
     </head>
@@ -25,7 +19,7 @@
             <div class="collapse navbar-collapse" id="NavbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Descubre el fraude</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fraude.html">Descubre el fraude</a></li>
                     <li class="nav-item"><a class="nav-link" href="remedio.html">Descubre el remedio</a></li>
                     <li class="nav-item"><a class="nav-link" href="copyright.html">Registra tu nombre</a></li>
                     <li class="nav-item"><a class="nav-link" href="trust.html">International Trust</a></li>
@@ -35,6 +29,8 @@
         </nav>
 
         
+        
+
         <header class="jumbotron">
             <div class="container">
                 <div class="row row-header">
@@ -46,29 +42,67 @@
                         <h3>El lugar donde encontrar tus plantillas.</h3>
                     </div>
                 </div>
-            </div>        
+            </div> 
         </header>
-
+        
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Fraude</li>
+                  <li class="breadcrumb-item active" aria-current="page">Precios</li>
                 </ol>
               </nav>    
         </div>
 
         <div class="container">
-            <h1>El gran Fraude</h1>
+            <h1>Lista de precios de nuestros servicios:</h1>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <th>Precio <span class="oi oi-euro"></span></th>
+                        <th>Plantilla</th>
+                        <th>Apostilla</th>
+                        <th>Presentación</th>
+                        <th>Apostilla + Presentación</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Copyright nombre</th>
+                            <td>Gratis <span class="oi oi-bolt"></span></td>
+                            <td>40€</td>
+                            <td>10€</td>
+                            <td>50€ <span class="oi oi-chevron-top"></span></td>
+                        </tr>
+                        <tr>
+                            <th>International Trust</th>
+                            <td>Gratis <span class="oi oi-bolt"></span></td>
+                            <td>60€</td>
+                            <td>20€</td>
+                            <td>80€ <span class="oi oi-chevron-top"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Tort Claim </th>
+                            <td>Gratis <span class="oi oi-bolt"></span></td>
+                            <td>100€</td>
+                            <td>50€</td>
+                            <td>120€ <span class="oi oi-chevron-top"></span></td>
+                        </tr>
+                    </tbody>
+    
+    
+                </table>
+            
+                <p>* Consulta la pagina <a href="about.html">Quien somos</a> para saber porque se cobran los servicios.</p>
+            </div>
+            
         </div>
-        
         <footer class="footer">
             <div class="container">
                 <div class="row row-footer">
                     <div class="col align-items-center">
                         <div><a href="index.html"><span class="oi oi-home"></span> Inicio</a></div>
                         <div><a href="about.html"><span class="oi oi-header"></span> Quien somos</a></div>
-                        <div><a href="#"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
+                        <div><a href="fraude.html"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
                         <div><a href="remedio.html"><span class="oi oi-link-broken"></span> Entiende el Remedio</a></div>
                     </div>
                     <div class="col d-flex flex-column">
@@ -88,11 +122,7 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!--build:js dist/index.js-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script> 
-        <!--endbuild-->
+        <script src="dist/index.js"></script>
+
     </body>
 </html>

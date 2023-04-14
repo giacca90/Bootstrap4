@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-   <!--build:css dist/index.css-->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
-       <!--endbuild-->
+    <link rel="stylesheet" href="dist/index.css">
 
     <title>Plantillas Soberanas</title>
     </head>
@@ -25,7 +19,7 @@
             <div class="collapse navbar-collapse" id="NavbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Descubre el fraude</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fraude.html">Descubre el fraude</a></li>
                     <li class="nav-item"><a class="nav-link" href="remedio.html">Descubre el remedio</a></li>
                     <li class="nav-item"><a class="nav-link" href="copyright.html">Registra tu nombre</a></li>
                     <li class="nav-item"><a class="nav-link" href="trust.html">International Trust</a></li>
@@ -34,6 +28,7 @@
             </div>
         </nav>
 
+        
         
         <header class="jumbotron">
             <div class="container">
@@ -46,29 +41,50 @@
                         <h3>El lugar donde encontrar tus plantillas.</h3>
                     </div>
                 </div>
-            </div>        
-        </header>
+            </div> 
+        </header>           
 
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Fraude</li>
+                  <li class="breadcrumb-item active" aria-current="page">Plantillas</li>
                 </ol>
               </nav>    
         </div>
-
-        <div class="container">
-            <h1>El gran Fraude</h1>
-        </div>
         
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="nav nav-pills" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="copyright-tab" data-bs-toggle="pill" data-bs-target="#copyright" type="button" role="tab" aria-controls="copyright-tab" aria-selected="true">Copyright <span class="fa fa-copyright"></span></button>
+                        <button class="nav-link" id="trust-tab" data-bs-toggle="pill" data-bs-target="#trust" type="button" role="tab" aria-controls="trust" aria-selected="false">Trust</button>
+                        <button class="nav-link" id="tort-tab" data-bs-toggle="pill" data-bs-target="#tort" type="button" role="tab" aria-controls="tort" aria-selected="false">Tort</button>
+   
+                    </div>
+                    
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="copyright" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <h1>Copyright</h1>
+                    </div>
+                
+                    <div class="tab-pane fade" id="trust" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <h1>Trust</h1>
+                    </div>
+                    <div class="tab-pane fade" id="tort" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h1>Tort</h1>
+                    </div>
+                </div>                      
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="row row-footer">
                     <div class="col align-items-center">
                         <div><a href="index.html"><span class="oi oi-home"></span> Inicio</a></div>
                         <div><a href="about.html"><span class="oi oi-header"></span> Quien somos</a></div>
-                        <div><a href="#"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
+                        <div><a href="fraude.html"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
                         <div><a href="remedio.html"><span class="oi oi-link-broken"></span> Entiende el Remedio</a></div>
                     </div>
                     <div class="col d-flex flex-column">
@@ -88,11 +104,6 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!--build:js dist/index.js-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script> 
-        <!--endbuild-->
+        <script src="dist/index.js"></script>
     </body>
 </html>

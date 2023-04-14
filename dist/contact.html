@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-   <!--build:css dist/index.css-->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
-       <!--endbuild-->
+    <link rel="stylesheet" href="dist/index.css">
 
     <title>Plantillas Soberanas</title>
     </head>
@@ -25,7 +19,7 @@
             <div class="collapse navbar-collapse" id="NavbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Descubre el fraude</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fraude.html">Descubre el fraude</a></li>
                     <li class="nav-item"><a class="nav-link" href="remedio.html">Descubre el remedio</a></li>
                     <li class="nav-item"><a class="nav-link" href="copyright.html">Registra tu nombre</a></li>
                     <li class="nav-item"><a class="nav-link" href="trust.html">International Trust</a></li>
@@ -34,6 +28,7 @@
             </div>
         </nav>
 
+        
         
         <header class="jumbotron">
             <div class="container">
@@ -53,13 +48,60 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Fraude</li>
+                  <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                 </ol>
               </nav>    
         </div>
 
         <div class="container">
-            <h1>El gran Fraude</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Tu nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Tu apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Tu apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="diceccion" class="form-label">Tu dirección</label>
+                    <input type="text" class="form-control" id="diceccion" placeholder="Tu dicección">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="provincia">Provincia</label>
+                    <select  id="provincia" class="form-control">
+                        <option selected>Barcelona</option>
+                        <option >Girona</option>
+                        <option >Lleida</option>
+                        <option >Tarragona</option>
+                        <option >Castellón</option>
+                        <option >Valencia</option>
+                        <option >Alicante</option>
+                        <option >Murcia</option>
+                        <option >Madrid</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Tu correo electronico</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Escribe aqui tu comentario</label>
+                    <textarea class="form-control" id="comment" rows="15"></textarea>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check">
+                        <label class="form-check-label" for="check">Queres que te contactemos??</label>
+                    </div>
+                   
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary"> Enviar </button>
+                </div>    
+            </form>
         </div>
         
         <footer class="footer">
@@ -68,7 +110,7 @@
                     <div class="col align-items-center">
                         <div><a href="index.html"><span class="oi oi-home"></span> Inicio</a></div>
                         <div><a href="about.html"><span class="oi oi-header"></span> Quien somos</a></div>
-                        <div><a href="#"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
+                        <div><a href="fraude.html"><span class="oi oi-link-intact"></span> Entiende el Fraude</a></div>
                         <div><a href="remedio.html"><span class="oi oi-link-broken"></span> Entiende el Remedio</a></div>
                     </div>
                     <div class="col d-flex flex-column">
@@ -88,11 +130,6 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!--build:js dist/index.js-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script> 
-        <!--endbuild-->
+       <script src="dist/index.js"></script>
     </body>
 </html>
