@@ -42,33 +42,3 @@ Salida a producción:
     en package.json añadir en la sección "scripts":
         "build": "npm clean && npm run scss && npm run imagemin && npm run usemin"
     ejecutar npm run build
-
-
-Instalar Grunt:
-    sudo npm install --save-dev grunt
-    crea el archivo Gruntfile.js
-    sudo npm install --save-dev grunt-contrib-sass
-    Añade contenido a Gruntfile.js
-    comprueba que funcione con el comando:
-        sudo grunt css
-    sudo npm install --save-dev grunt-contrib-watch
-    Añade contenido a Gruntfile.js
-    comprueba que funcione con el comando:
-        sudo grunt watch
-    sudo npm install --save-dev grunt-browser-sync
-    Añade contenido a Gruntfile.js
-    comprueba que funcione con el comando:
-        grunt
-    sudo npm install --save-dev grunt-contrib-imagemin
-    Añade contenido a Gruntfile.js
-    sudo npm install --save-dev time-grunt
-    sudo npm install --save-dev jit-grunt
-    sudo npm install --save-dev grunt-contrib-copy
-    sudo npm install --save-dev grunt-contrib-clean
-    sudo npm install --save-dev grunt-contrib-concat
-    sudo npm install --save-dev grunt-contrib-cssmin
-    sudo npm install --save-dev grunt-contrib-uglify
-    sudo npm install --save-dev grunt-filerev
-    sudo npm install --save-dev grunt-usemin
-    probar si todo funciona con el comando:
-        grunt build
