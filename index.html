@@ -7,13 +7,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     
-    <!--build:css dist/index.css-->
+    <!--build:css css/index.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
         <!--endbuild-->
+
     <title>Plantillas Soberanas</title>
     </head>
     <body>
@@ -265,64 +266,11 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <!--build:js dist/index.js-->
+        <!--build:js js/index.js-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>$(document).ready(function(){
-           $('[data-toggle="tooltip"]').tooltip();
-           $("#carousel").carousel({interval: 4000});
-            });
-           $('#loginModal').on('hide.bs.modal',function(e){
-            console.log('el modal se ma a esconder')
-           });
-           $('#loginModal').on('hidden.bs.modal',function(e){
-            console.log('el modal se ha escondido')
-           });
-           $('#loginModal').on('show.bs.modal',function(e){
-            console.log('el modal se va a mostrar')
-           });
-           $('#loginModal').on('shown.bs.modal',function(e){
-            console.log('el modal se ha mostrado');
-           });
-           
-           $("#loginForm").keyup(function() {
-
-                $correoText = $("#InputEmail").val();
-                $passwordText= $("#InputPassword").val();
-
-                if( $correoText.length<=0 || $passwordText.length<= 0){
-                    console.log('disabled');
-                    $('#loginButton').addClass('disabled')
-                
-                }
-                else{
-                    console.log('abled');
-                    $('#loginButton').removeClass('disabled');
-                } 
-            });
-
-            $("#registerForm").keyup(function() {
-
-                $correoText2 = $("#InputEmail2").val();
-                $passwordText2= $("#InputPassword2").val();
-                $passwordText3= $("#InputPassword3").val();
-
-                if( $correoText2.length<=0 || $passwordText2.length<= 0 || $passwordText3.length<=0){
-                    console.log('disabled');
-                    $('#registerButton').addClass('disabled')
-                
-                }
-                else{
-                    if($passwordText2==$passwordText3){
-                        console.log('abled');
-                    $('#registerButton').removeClass('disabled');
-                    }
-                    
-                } 
-            });
-
-        </script> 
+        <script src="./js/index.js"></script>
         <!--endbuild-->
     </body>
 </html>

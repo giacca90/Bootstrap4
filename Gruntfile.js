@@ -57,10 +57,26 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
-            dist: {}
+            dist: { 
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css'],
+                    dest: 'dist/css',
+                    ext: '.css'
+                }
+            ]}
         },
         uglify: {
-            dist: {}
+            dist: { 
+                files: [{
+                    expand: true,
+                    cwd: 'js',
+                    src: ['*.js'],
+                    dest: 'dist/js',
+                    ext: '.js'
+                }
+            ]}
         },
         filerev: {
             options: {
@@ -121,6 +137,7 @@ module.exports = function(grunt) {
         'imagemin',
         'useminPrepare',
         'concat',
+        'cssmin',
         'uglify',
         'filerev',
         'usemin'
